@@ -397,98 +397,19 @@
 
   const MENU = [
     {
-      id: "cafeteria",
-      title: "Cafetería",
-      items: [
-        { name: "Espresso", price: "$3.500" },
-        { name: "Americano", price: "$3.500" },
-        { name: "Cortado", price: "$3.500" },
-        { name: "Lágrima", price: "$3.500" },
-        { name: "Café con leche", price: "$4.500" },
-        { name: "Lágrima doble", price: "$4.500" },
-        { name: "Americano doble", price: "$4.000" },
-        { name: "Cortado doble", price: "$4.000" },
-        { name: "Submarino", price: "$5.000" }
-      ]
-    },
-    {
-      id: "confiteria",
-      title: "Confitería",
-      items: [
-        { name: "Medialunas", price: "$1.000" },
-        { name: "Tostado miga", price: "$6.000" },
-        { name: "Sandwich panini", note: "tostado", price: "$6.000" },
-        { name: "Pebete J/Q", note: "tostado", price: "$6.000" },
-        { name: "Medialunas J/Q", price: "$2.000" },
-        { name: "Super panchos", price: "$3.500" }
-      ]
-    },
-    {
-      id: "sinalcohol",
-      title: "Bebidas sin alcohol",
-      items: [
-        { name: "Agua Villavicencio x500", price: "$3.000" },
-        { name: "Levité", note: "pomelo / naranja / manzana / pomelo cero", price: "$4.000" },
-        { name: "Speed 250 ml", price: "$5.000" },
-        { name: "Gaseosas x500 ml", price: "$5.000" },
-        { name: "Jugo exprimido", note: "naranja / limonada", price: "$5.000" }
-      ]
-    },
-    {
-      id: "pizza",
-      title: "Pizza",
-      items: [
-        { name: "Muzarella", price: "$15.000" },
-        { name: "Muzza con jamón", price: "$20.000" }
-      ]
-    },
-    {
-      id: "empanadas",
-      title: "Empanadas",
-      items: [
-        { name: "Carne", price: "$3.500" },
-        { name: "Jamón y queso", price: "$3.500" },
-        { name: "Capresse", price: "$3.500" },
-        { name: "Empanadas sin TACC", price: "Consultar" }
-      ]
-    },
-    {
-      id: "cervezas",
-      title: "Cervezas",
-      items: [
-        { name: "Isenbeck lata x473", price: "$4.000" },
-        { name: "Heineken porrón", price: "$6.000" },
-        { name: "Imperial lata x473", price: "$6.000" },
-        { name: "Michelob Ultra", note: "libre de gluten", price: "$6.000" },
-        { name: "Imperial IPA lata x473", price: "$6.000" },
-        { name: "Heineken lata x473", price: "$7.500" },
-        { name: "Heineken litro", price: "$14.000" }
-      ]
-    },
-    {
-      id: "vinos",
-      title: "Vinos y espumantes",
-      items: [
-        { name: "Homenaje", note: "malbec", price: "$15.000" },
-        { name: "Fond de Cave", note: "chardonnay / malbec", price: "$15.000" },
-        { name: "Don David", note: "malbec / torrontés", price: "$15.000" },
-        { name: "Navarro Correa", note: "extra brut / dulce", price: "$20.000" },
-        { name: "Fond de Cave Rva.", note: "malbec / cabernet franc", price: "$20.000" },
-        { name: "Copa de vino", price: "$4.000" }
-      ]
-    },
-    {
       id: "tragos",
       title: "Tragos",
       accent: true,
       items: [
         { name: "Fernet Branca c/coca", price: "$7.500" },
         { name: "Campari", price: "$7.500" },
-        { name: "Vodka con Speed", price: "$7.500" },
         { name: "Gin Tonic", note: "limón / naranja", price: "$7.500" },
-        { name: "Negroni", note: "vermú / campari / gin", price: "$7.500" },
-        { name: "Ferroviario", note: "fernet / soda / vermú", price: "$7.500" },
-        { name: "Cuba Libre", note: "ron / coca", price: "$7.500" }
+        { name: "Negroni", note: "carpano rosso / bitter / gin blu", price: "$7.500" },
+        { name: "Ferroviario", note: "fernet branca / soda / vermut carpano rosso", price: "$7.500" },
+        { name: "Cuba Libre", note: "ron / coca", price: "$7.500" },
+        { name: "Copa Vermut Carpano", price: "$7.500" },
+        { name: "Carpano Orange", price: "$7.500" },
+        { name: "Vodka con Speed", price: "$10.000" }
       ]
     },
     {
@@ -504,7 +425,51 @@
       id: "champagne",
       title: "Champagne",
       items: [
-        { name: "Navarro Correa", note: "extra brut / dulce", price: "$20.000" }
+        { name: "Navarro Correa", note: "extra brut / dulce", price: "$19.000" }
+      ]
+    },
+    {
+      id: "vinos",
+      title: "Vinos y espumantes",
+      items: [
+        { name: "El Cazador / La Celia", note: "malbec / cabernet sauvignon", price: "$12.000" },
+        { name: "Alma Mora", note: "malbec / dulce de viognier", price: "$12.000" },
+        { name: "Fond de Cave", note: "chardonnay / malbec", price: "$15.000" },
+        { name: "Don David", note: "malbec / torrontés", price: "$15.000" },
+        { name: "Navarro Correa", note: "extra brut / dulce", price: "$19.000" },
+        { name: "Fond de Cave Reserva", note: "malbec / cabernet franc", price: "$20.000" }
+      ]
+    },
+    {
+      id: "cervezas",
+      title: "Cervezas",
+      items: [
+        { name: "Isenbeck lata x473", price: "$5.000" },
+        { name: "Heineken porrón x330", price: "$6.000" },
+        { name: "Imperial lata x473", price: "$6.000" },
+        { name: "Michelob Ultra x473", note: "sin TACC", price: "$6.000" },
+        { name: "Imperial IPA lata x473", price: "$6.000" },
+        { name: "Heineken lata x473", price: "$7.500" },
+        { name: "Heineken litro", price: "$16.000" }
+      ]
+    },
+    {
+      id: "sinalcohol",
+      title: "Sin alcohol",
+      items: [
+        { name: "Agua Villavicencio x500", price: "$3.000" },
+        { name: "Levite", note: "pomelo / naranja / manzana / pomelo cero", price: "$4.000" },
+        { name: "Speed 250 ml", price: "$5.000" },
+        { name: "Gaseosas x500 ml", price: "$5.000" }
+      ]
+    },
+    {
+      id: "comidas",
+      title: "Comidas",
+      items: [
+        { name: "Pizzeta", price: "$3.000" },
+        { name: "Empanada", note: "carne / jamón y queso / caprese", price: "$3.000" },
+        { name: "Empanadas sin TACC", price: "Consultar" }
       ]
     }
   ];
